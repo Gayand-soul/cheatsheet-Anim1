@@ -20,14 +20,14 @@
 @keyframes fadeAndMoveBack {
     0% {
         opacity: 1.0;
-        transform: translateX(0);
-        color: darkblue;
+        transform: translateX(100%);
+        color: rgb(192, 9, 61);
     }
   
     100% {
         opacity: 0;
-        transform: translateX(-1000%);
-        color: rgb(6, 6, 106);
+        transform: translateX(0%);
+        color: rgb(10, 191, 40);
     }
    
 }
@@ -37,6 +37,7 @@
     0% {
         opacity: 1.0;
         transform: translateY(0);
+        color: rgb(192, 9, 61);
     }
     20% {
         opacity: 0.92;
@@ -57,6 +58,7 @@
     50% {
         opacity: 0.50;
         transform: translateY(100px);
+        color: rgb(192, 9, 61);
 
     }
     60% {
@@ -78,6 +80,7 @@
     100% {
         opacity: 0;
         transform: translateY(300px);
+        color: rgb(192, 9, 61);
     }
    
 }
@@ -102,13 +105,14 @@
     width: 400px;
     animation: fadeAndMove 10s cubic-bezier(0.48, 0, 0.58, 1) 0.5s forwards;
     /*animation: fadeAndMove 15s cubic-bezier(0.48, 0, 0.58, 1) 0.5s infinite alternate forwards;*/
-    /*animation: fadeAndMove 15s ease-in-out infinite;ger linear movements and fade away*/
+    /*animation: fadeAndMove 15s ease-in-out infinite;gives linear movements and fade away*/
 }
 .animated-backward {
     width: 400px;
-    animation: fadeAndMoveBack 10s cubic-bezier(0.48, 0, 0.58, 1) 2s alternate;
+    animation: fadeAndMoveBack 5s cubic-bezier(0.48, 0, 0.58, 1) 2s backwards;
     right:0;
     margin:0;
+    position: relative;
 }
 
 .animated-toDown {
