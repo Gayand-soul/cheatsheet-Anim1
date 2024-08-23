@@ -1,0 +1,178 @@
+
+/* keyframe features--23 of August 2024----------------------------------*/
+
+/* sentence moving forwards in X-axis*/  
+@keyframes fadeAndMove {
+    0% {
+        opacity: 1.0;
+        transform: translateX(0);
+        color: rgb(19, 10, 118)
+    }
+        
+    100% {
+        opacity: 0;
+        transform: translateX(1100%);
+        color:rgb(183, 199, 238)
+    }
+
+ /* sentence moving backwards in X-axis*/  
+}
+@keyframes fadeAndMoveBack {
+    0% {
+        opacity: 1.0;
+        transform: translateX(0);
+        color: darkblue;
+    }
+    20% {
+        opacity: 0.92;
+        transform: translateX(20%);
+        color: rgb(5, 5, 165);
+    }
+    30% {
+        opacity: 0.82;
+        transform: translateX(30%);
+        color: rgb(23, 23, 189);
+    }
+    40% {
+        opacity: 0.72;
+        transform: translateX(40%);
+        color: rgb(39, 39, 222);
+    }
+    45% {
+        opacity: 0.62;
+        transform: translateX(45%);
+        color: rgb(62, 62, 224);
+    }
+    50% {
+        opacity: 0.50;
+        transform: translateX(50%);
+        color: rgb(61, 61, 230);
+
+    }
+    60% {
+        opacity: 0.41;
+        transform: translateX(60%);
+        color: rgb(76, 76, 239);
+    }
+    80% {
+        opacity: 0.39;
+        transform: translateX(80%);
+        color: rgb(104, 104, 236);
+    }
+    85% {
+        opacity: 0.29;
+        transform: translateX(85%);
+        color: rgb(113, 113, 237);
+    }
+    90% {
+        opacity: 0.10;
+        transform: translateX(90%);
+        color: rgb(132, 132, 246);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+        color: rgb(183, 183, 242);
+    }
+   
+}
+
+/*sentence moving downwards in Y-axis*/  
+@keyframes moveDownAndFade {
+    0% {
+        opacity: 1.0;
+        transform: translateY(0);
+    }
+    20% {
+        opacity: 0.92;
+        transform: translateY(20px);
+    }
+    30% {
+        opacity: 0.82;
+        transform: translateY(40px);
+    }
+    40% {
+        opacity: 0.72;
+        transform: translateY(60px);
+    }
+    45% {
+        opacity: 0.62;
+        transform: translateY(80px);
+    }
+    50% {
+        opacity: 0.50;
+        transform: translateY(100px);
+
+    }
+    60% {
+        opacity: 0.41;
+        transform: translateY(130px);
+    }
+    80% {
+        opacity: 0.39;
+        transform: translateY(200px);
+    }
+    85% {
+        opacity: 0.29;
+        transform: translateY(250px);
+    }
+    90% {
+        opacity: 0.10;
+        transform: translateY(299px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+   
+}
+
+/* sentence moving Upwards in Y-axis*/ 
+@keyframes moveUppAndFade {
+    0% {
+        opacity: 1.0;
+        transform: translateY(0);
+        color: rgb(10, 109, 10)
+    }
+        
+    100% {
+        opacity: 0;
+        transform: translateY(-1000%);
+        color:rgb(170, 233, 198)
+    }
+
+}
+/*--timing function which controls the velocity-----*/
+.animated-forward {
+    width: 400px;
+    animation: fadeAndMove 10s cubic-bezier(0.48, 0, 0.58, 1) 0.5s forwards;
+    /*animation: fadeAndMove 15s cubic-bezier(0.48, 0, 0.58, 1) 0.5s infinite alternate forwards;*/
+    /*animation: fadeAndMove 15s ease-in-out infinite;ger linear movements and fade away*/
+}
+.animated-backward {
+    width: 400px;
+    animation: fadeAndMoveBack 10s cubic-bezier(0.445, 0.05, 0.55, 0.95) alternate-reverse;
+    right:0;
+    margin: 0;
+}
+
+.animated-toDown {
+    width: 400px;
+    animation: moveDownAndFade 10s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
+}
+
+.animated-toUpp {
+    width:400px;
+    animation: moveUppAndFade 10s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards;
+    position: relative;
+    left:0;
+    margin:0;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color:rgb(112, 9, 81);
+}
