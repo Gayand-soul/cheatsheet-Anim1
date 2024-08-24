@@ -1,7 +1,8 @@
 # cheatsheet-Anim1
 #Project Title and Description: 
- **Title**: cheatsheet with Text Animation
- **Deskcription**:This cheatsheet provides a quick guide to implementing a simple text animation
+
+ -**Title**: cheatsheet with Text Animation
+ -**Deskcription**:This cheatsheet provides a quick guide to implementing a simple text animation
  using HTML and CSS. It covers everything from setup to customization, making it easy to integrate
  an animated text element int your web projects.
 
@@ -12,7 +13,7 @@
 #Additional Information
    - **Customization Tips**:
      - **Change Text**: Edit the text content inside the `<h1>,<h2>,<h3>` tag in `index.html`.
-     - **Adjust Animation Speed**: Modify the `10s` value in the CSS rule `.animated-forward/backward/toDown/toUpp:         moveText 10s infinite;` to speed up or slow down the animation.
+     - **Adjust Animation Speed**: Modify the `10s` value in the CSS rule `.animated-forward/backward/toDown/       toUpp: moveText 10s infinite;` to speed up or slow down the animation.
     
    - **FAQ**:
      - **Q**: How do I change the animation direction?
@@ -26,13 +27,13 @@
  ### Installation Steps:
    1. Clone or download the project repository:
       ```bash
-      git clone https://github.com/Gayand-soul/text-animation.git
+      git clone https://github.com/Gayand-soul/cheatsheet-Anim1.git
       ```
    2. Navigate to the project folder:
       ```bash
-      cd text-animation
+      cd cheatsheet-Anim1
       ```
-   3. Open the `index.html` file in your web browser to view the animated text.
+   3. Open the `index.html` file in your web browser to view the cheatsheet-Anim1.
 
 
  
