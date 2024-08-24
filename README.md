@@ -2,12 +2,13 @@
 #Project Title and Description: 
 
  -**Title**: cheatsheet with Text Animation
+ 
  -**Deskcription**:This cheatsheet provides a quick guide to implementing a simple text animation
  using HTML and CSS. It covers everything from setup to customization, making it easy to integrate
  an animated text element int your web projects.
 
 #Features
- - **Simple Text Animation**: Adds an animated effect to the text inside an `<h3>` element using CSS.
+ - **Simple Text Animation**: Adds an animated effect to the text inside `<h1>,<h2>,<h3>` elements using CSS.
  - **Easy Customization**: Modify the text, animation speed, and other properties directly in the code.
 
 #Additional Information
